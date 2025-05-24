@@ -48,7 +48,7 @@ export function findAll(req, res) {
     // }
     db.collection('users').find({}).toArray()
         .then(data => {
-        res.send(data);
+        res.send([]);
         })
         .catch(err => {
         res.sendStatus(500).send({
