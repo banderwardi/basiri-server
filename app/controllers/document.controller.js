@@ -116,6 +116,7 @@ export function sort(req, res) {
 
 // Find a single Document with an id
 export function findOne(req, res) {
+    console.log(req);
     if (!req || !req.body.filter) {
         return res.sendStatus(400).send({
           message: "Data can not be empty!"
