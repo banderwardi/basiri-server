@@ -40,7 +40,7 @@ export function create(req, res) {
 
 // Retrieve all Documents from the database.
 export function findAll(req, res) {
-    // res.send([{name: db.secondaryOk}]);
+    res.send([{name: db.secondaryOk}]);
     if (!req || !req.body.collection) {
         return res.sendStatus(400).send({
           message: "Data can not be empty!"
